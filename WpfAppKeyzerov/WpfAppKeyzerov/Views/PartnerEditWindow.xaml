@@ -1,0 +1,42 @@
+﻿<Window x:Class="Keyzerov.WPF.Views.PartnerEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактирование партнера" Height="500" Width="400"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="Наименование:"/>
+                <TextBox Text="{Binding Partner.Name}" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Тип партнера:"/>
+                <ComboBox ItemsSource="{Binding Types}" SelectedValuePath="Id" DisplayMemberPath="TypeName"
+                          SelectedValue="{Binding SelectedTypeId}" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Рейтинг:"/>
+                <TextBox Text="{Binding Partner.Rating}" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Адрес:"/>
+                <TextBox Text="{Binding Partner.Address}" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="ФИО Директора:"/>
+                <TextBox Text="{Binding Partner.DirectorName}" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Телефон:"/>
+                <TextBox Text="{Binding Partner.Phone}" Height="30" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Email:"/>
+                <TextBox Text="{Binding Partner.Email}" Height="30" Margin="0,0,0,10"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Отмена" Width="100" Height="35" Margin="0,0,10,0" Click="BtnCancel_Click"/>
+            <Button Content="Сохранить" Width="100" Height="35" Background="#4CAF50" Foreground="White" Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Keyzerov.Core.Data.AppDbContext">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAQAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\AppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyzerov.Core.Models.Partner">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQgAACAAAAAAACAAAAQAAAAIAAEmAUAAIAAAAAA=</HashCode>
+      <FileName>Models\Partner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyzerov.Core.Models.PartnerType">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PartnerType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyzerov.Core.Models.SalesHistory">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgAEIAAg=</HashCode>
+      <FileName>Models\SalesHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyzerov.Core.Services.DiscountCalculator">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\DiscountCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyzerov.Core.Services.PartnerService">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAAAAABAAACIACBAAAAAAAEAAAAAQgAAAAAAA=</HashCode>
+      <FileName>Services\PartnerService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Keyzerov.Core.Services.IPartnerService">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABABAAAAAAAAACIACBAAAAAAAEAAAAAQgAAAAAAA=</HashCode>
+      <FileName>Services\IPartnerService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
